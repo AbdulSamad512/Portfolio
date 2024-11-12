@@ -20,7 +20,7 @@ def local_css(file_name):
 local_css("style.css")
 
 lottie_coder = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_UBiAADPga8.json")
-lottie_contact = load_lottieurl("https://assets5.lottiefiles.com/packages/lf20_lt8ter7g.json")
+lottie_contact = load_lottieurl("https://assets4.lottiefiles.com/packages/lf20_lt8ter7g.json")
 image = Image.open("sentiment.png")
 
 def web_portfolio():
