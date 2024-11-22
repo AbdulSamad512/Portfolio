@@ -160,7 +160,7 @@ def web_portfolio():
                 st.markdown("""
                 - To Perform Sentiment Analysis 1-WordCloud of your positive and negative sentences   2-Lets Perform Emoji Analysis 3-Collect the entire data of youtube 4-which category has maximum likes 5-Analyzing relationship between views and likes 6-Whats channel have the largest number of trending videos?
                 """)
-             # Project 2: Sales Forecasting
+            # Project 2: Finance Dashboard            
             st.write("## Finance DashBoard:")
             col7, col8 = st.columns((1, 2))
             with col7:
@@ -170,7 +170,7 @@ def web_portfolio():
                 st.markdown("""
                 - The dashboard is a Personal Finance Dashboard summarizing key financial metrics such as income, expenses, and available balance. It tracks performance against target income, with visualizations for income trends and a gauge to highlight target shortfalls. The dashboard also includes an alert system for upcoming debts and a monthly selection panel for easy filtering. It provides a clear overview of financial health, helping users track their income and expenses effectively.
                 """)
-            # Project 4: Winter Forecasting
+            # Project 3: Winter Forecasting
             st.write("## Winter Sales Forecasting:")
             col9, col10 = st.columns((1, 2))
             with col9:
@@ -221,14 +221,13 @@ def web_portfolio():
                 """)
             # Project 7: House Price Prediction Using ANN
             st.write("## Housing Price Prediction Using ANN:")
-            col20, col21=st.columns((1,2))
+            col20, col21= st.columns((1,2))
             with col20:
                 st.image("House.png")
             with col21:
-                st.markdown("""[Visit Github Repo](https://github.com/AbdulSamad512/Housing_Price_Prediction_Using_ANN)
-                """)
+                st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Housing_Price_Prediction_Using_ANN)")
                 st.markdown("""
-                    The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
+                -The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
                 """)
     if selected=='Contact':
         st.header("Get in touch!")
