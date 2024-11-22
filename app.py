@@ -219,6 +219,17 @@ def web_portfolio():
                 st.markdown("""
                 - The dashboard provides an income statement analysis for the selected year, comparing current and previous periods across key financial metrics such as revenue, gross profit, net income, and expenses. It highlights percentage changes for each metric and includes visual representations, such as line charts and a donut chart for the net income margin (11.45%). The dashboard is segmented by months and regions, allowing for further filtering and exploration of financial performance over time. Key figures show minor growth in revenue (1%) but a significant drop in net income (34%).
                 """)
+            # Project 7: House Price Prediction Using ANN
+            st.write("## Housing Price Prediction Using ANN:")
+            col20, col21=st.columns((1,2))
+            with col20:
+                st.image("House.png")
+            with col21:
+                st.markdown("""[Visit Github Repo](https://github.com/AbdulSamad512/Housing_Price_Prediction_Using_ANN)
+                """)
+                st.markdown("""
+                    The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
+                """)
     if selected=='Contact':
         st.header("Get in touch!")
         st.write("##")
