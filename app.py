@@ -151,6 +151,27 @@ def web_portfolio():
     if selected =="Projects":
         with st.container():
             st.header("My Projects")
+            # Project 7: House Price Prediction Using ANN
+            st.write("## Housing Price Prediction Using ANN:")
+            col20, col21= st.columns((1,2))
+            with col20:
+                st.image("House.png")
+            with col21:
+                st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Housing_Price_Prediction_Using_ANN)")
+                st.markdown("""
+                -The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
+                """)
+            # Project 8: Sentiment_Analysis_Using_NeuralNetwork
+            st.write("## Sentiment_Analysis_Using_NeuralNetwork")
+            col22,col23 = st.columns((1,2))
+            with col22:
+                st.image("NLP-Sentiment.png")
+            with col23:
+                st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/SentimentAnalysis_with_NeuralNetwork)")
+                st.markdown("""
+                -This project focuses on sentiment analysis using deep neural networks, specifically LSTM (Long Short-Term Memory) layers. It begins with loading a dataset of movie reviews, followed by text preprocessing steps like tokenization, sequence padding, and stopword removal. A sequential model is built with embedding layers and LSTM for extracting temporal patterns, with dense layers for classification. The model is trained and evaluated for accuracy in predicting sentiments (positive or negative). Results are interpreted, and the trained model is ready for deployment in sentiment analysis applications.
+                """)
+            # Project 1 : Sentiment Analysis
             st.write("## Sentiment Analysis:")
             col5,col6 = st.columns((1,2))
             with col5:
@@ -218,16 +239,6 @@ def web_portfolio():
                 st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNjBiMzViYmEtNDEzYi00MjVkLWJmYzAtMzA0M2I0Y2ZlYTM3IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
                 st.markdown("""
                 - The dashboard provides an income statement analysis for the selected year, comparing current and previous periods across key financial metrics such as revenue, gross profit, net income, and expenses. It highlights percentage changes for each metric and includes visual representations, such as line charts and a donut chart for the net income margin (11.45%). The dashboard is segmented by months and regions, allowing for further filtering and exploration of financial performance over time. Key figures show minor growth in revenue (1%) but a significant drop in net income (34%).
-                """)
-            # Project 7: House Price Prediction Using ANN
-            st.write("## Housing Price Prediction Using ANN:")
-            col20, col21= st.columns((1,2))
-            with col20:
-                st.image("House.png")
-            with col21:
-                st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Housing_Price_Prediction_Using_ANN)")
-                st.markdown("""
-                -The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
                 """)
     if selected=='Contact':
         st.header("Get in touch!")
