@@ -46,7 +46,7 @@ def web_portfolio():
             cert_imgs.append("data:image/jpg;base64," + b64encode(cert_file.read()).decode())
 
     # Reading Profile
-    with open("DACV.pdf", "rb") as pdf_file:
+    with open("MLCV.pdf", "rb") as pdf_file:
        pdf_bytes = pdf_file.read()
 
     # Add animation on the DP
@@ -148,98 +148,138 @@ def web_portfolio():
                         <img src="{cert_img}" alt="Certificate {idx+1}" style='width: 150px; height: 150px; margin: 10px;'>
                         </div>
                         """, unsafe_allow_html=True)
-    if selected =="Projects":
+    if selected == "Projects":
         with st.container():
             st.header("My Projects")
+        # Add subcategories for Dashboards and Data Science Projects
+            subcategory = st.radio("Select Project Category:", ["Dashboards", "Data Science Projects"], horizontal=True)
+
+        # Dashboards Section
+            if subcategory == "Dashboards":
+                st.write("## Dashboards")
+            
+                # Project 1: Finance Dashboard
+                st.write("### Finance Dashboard:")
+                col7, col8 = st.columns((1, 2))
+                with col7:
+                    st.image("Finance.png")
+                with col8:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiOWMxYWQ1OTAtYmZmYy00Y2E5LTlmYmUtOTI2YjA3MGU4MTlhIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")  
+                    st.markdown("""
+                    - The dashboard is a Personal Finance Dashboard summarizing key financial metrics such as income, expenses, and available balance. It tracks performance against target income, with visualizations for income trends and a gauge to highlight target shortfalls.
+                    """)
+
+                # Project 2: Sales Dashboard
+                st.write("## Sales Dashboard:")
+                col13, col14, col15, col16, col17 = st.columns((1, 1, 1, 1,1))  # Add more columns for additional images
+                with col13:
+                    st.image("Screenshot (237).png")  # First image
+                with col14:
+                    st.image("Screenshot (238).png")  # Second image
+                with col15:
+                    st.image("Screenshot (239).png")  # Third image
+                with col16:
+                    st.image("Screenshot (240).png")  
+                with col17:
+                    st.image("Screenshot (241).png")
+                st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiYWYwOGExMTYtZmJiOC00Zjg0LThlYjItOTIxMjljNzhiMTdiIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                st.markdown("""
+                - In this project highlights significant sales and return trends from 2010 to 2013. Over this period, you achieved a total of 61K transactions, resulting in a net sale of $73M and a profit margin of $48M, with 214K units sold across 349 products to 701 customers. The transaction volume increased consistently each year, with notable customer engagement categorized into Diamond, Silver, and Gold ratings. On the return side, 14K units were refunded, amounting to a $6M total refund, representing an 8% return rate. Key customers with the highest return rates include Monster Well and BodyBuild Depart, reflecting areas for improvement in product satisfaction.
+                """)
+
+            # Project 3: Income Statement Dashboard
+                st.write("### Income Statement Dashboard:")
+                col18, col19 = st.columns((1, 2))
+                with col18:
+                    st.image("Screenshot (242).png")
+                with col19:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNjBiMzViYmEtNDEzYi00MjVkLWJmYzAtMzA0M2I0Y2ZlYTM3IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                        -  The dashboard provides an income statement analysis for the selected year, comparing current and previous periods across key financial metrics such as revenue, gross profit, net income, and expenses. It highlights percentage changes for each metric and includes visual representations, such as line charts and a donut chart for the net income margin (11.45%). The dashboard is segmented by months and regions, allowing for further filtering and exploration of financial performance over time. Key figures show minor growth in revenue (1%) but a significant drop in net income (34%).
+                        """)
+            # Project 4: Patient Emergency Room Visit Report 
+                st.write("### Patient Emergency Room Visit Report")
+                col51,col52 = st.columns((1,2))
+                with col51:
+                    st.image("Patient.png")
+                with col52:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNDc4MzMzOTItZjBmMC00MmNkLWJhNTAtZjY1MmMyMTQ4MTRlIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - The Patient Emergency Room Visit Report provides an overview of 9,216 total visits, evenly split between administrative and non-administrative appointments. The average patient satisfaction score is 5.47, with 75.10% of services not rated and an average wait time of 35.26 minutes. Most visits occurred during weekdays, with adult patients making up the majority. Referrals primarily lead to general practitioners and orthopedics, while walk-in patients account for 58.59% of the total visits. Patient satisfaction correlates with shorter wait times, as highlighted in the demographic and age group heatmap analysis.
+                    """)
+
+
+        # Data Science Projects Section
+            elif subcategory == "Data Science Projects":
+                st.write("## Data Science Projects")
+
+                # Project 9: Gemini AI Voice Assistant
+                st.write("### AI Voice Assistant:")
+                col22, col23 = st.columns((1, 2))
+                with col22:
+                    st.image("AiVoice.png")
+                with col23:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Ai-Voice-Assistant)")
+                    st.markdown("""
+                    - I developed an AI Voice Assistant enabling interactive voice and text-based queries with a "Speak Now" button for seamless interaction. Built using Python (Flask) and HTML/CSS/JavaScript, it integrates voice-to-text, text-to-speech APIs, and pretrained LLMs to provide accurate, context-aware responses. This project highlights practical AI applications in education, customer support, and learning platforms.
+                    """)
+
             # Project 7: House Price Prediction Using ANN
-            st.write("## Housing Price Prediction Using ANN:")
-            col20, col21= st.columns((1,2))
-            with col20:
-                st.image("House.png")
-            with col21:
-                st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Housing_Price_Prediction_Using_ANN)")
-                st.markdown("""
-                -The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
-                """)
-            # Project 8: Sentiment_Analysis_Using_NeuralNetwork
-            st.write("## Sentiment_Analysis_Using_NeuralNetwork")
-            col22,col23 = st.columns((1,2))
-            with col22:
-                st.image("NLP-Sentiment.png")
-            with col23:
-                st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/SentimentAnalysis_with_NeuralNetwork)")
-                st.markdown("""
-                -This project focuses on sentiment analysis using deep neural networks, specifically LSTM (Long Short-Term Memory) layers. It begins with loading a dataset of movie reviews, followed by text preprocessing steps like tokenization, sequence padding, and stopword removal. A sequential model is built with embedding layers and LSTM for extracting temporal patterns, with dense layers for classification. The model is trained and evaluated for accuracy in predicting sentiments (positive or negative). Results are interpreted, and the trained model is ready for deployment in sentiment analysis applications.
-                """)
-            # Project 1 : Sentiment Analysis
-            st.write("## Sentiment Analysis:")
-            col5,col6 = st.columns((1,2))
-            with col5:
-                st.image(image)
-            with col6:
-                st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Sentiment_Analysis)")
-                st.markdown("""
-                - To Perform Sentiment Analysis 1-WordCloud of your positive and negative sentences   2-Lets Perform Emoji Analysis 3-Collect the entire data of youtube 4-which category has maximum likes 5-Analyzing relationship between views and likes 6-Whats channel have the largest number of trending videos?
-                """)
-            # Project 2: Finance Dashboard            
-            st.write("## Finance DashBoard:")
-            col7, col8 = st.columns((1, 2))
-            with col7:
-                st.image("Finance.png")
-            with col8:
-                st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiOWMxYWQ1OTAtYmZmYy00Y2E5LTlmYmUtOTI2YjA3MGU4MTlhIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")  
-                st.markdown("""
-                - The dashboard is a Personal Finance Dashboard summarizing key financial metrics such as income, expenses, and available balance. It tracks performance against target income, with visualizations for income trends and a gauge to highlight target shortfalls. The dashboard also includes an alert system for upcoming debts and a monthly selection panel for easy filtering. It provides a clear overview of financial health, helping users track their income and expenses effectively.
-                """)
-            # Project 3: Winter Forecasting
-            st.write("## Winter Sales Forecasting:")
-            col9, col10 = st.columns((1, 2))
-            with col9:
-                st.image("timeseries.png")  # Replace with actual image path or URL 
-            with col10:
-                st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Time-Series-Forecasting-Multi-Category-Sales/blob/main/Winter_SALES_FORECASTING.ipynb)") 
-                st.markdown("""
-                - Built a time-series forecasting model to predict future sales.
-                - Applied SARIMAX model for time-series data.
-                - Visualized forecast results and performance metrics using Matplotlib and Seaborn.
-                """)
-            # Project 4: Supermarket Sales Price Prediction
-            st.write("## Supermarket Sales Prediction:")
-            col11, col12 = st.columns((1, 2))
-            with col11:
-                st.image("supermarket.png")
-            with col12:
-                st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/SuperMarket-Sales-Prediction)")  
-                st.markdown("""
-                -The Sales Prediction System for XYZ Stores uses a trained machine learning model to predict sales based on historical data. It helps store managers and analysts make informed decisions by providing real-time sales predictions, optimizing inventory, planning promotions, and improving product placement efficiency.
-                """)
-            # Project 5: Sales Dashboard
-            st.write("## Sales Dashboard:")
-            col13, col14, col15, col16, col17 = st.columns((1, 1, 1, 1, 1))  # Add more columns for additional images
-            with col13:
-                st.image("Screenshot (237).png")  # First image
-            with col14:
-                st.image("Screenshot (238).png")  # Second image
-            with col15:
-                st.image("Screenshot (239).png")  # Third image
-            with col16:
-                st.image("Screenshot (240).png")
-            with col17:
-                st.image("Screenshot (241).png")
-            st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiYWYwOGExMTYtZmJiOC00Zjg0LThlYjItOTIxMjljNzhiMTdiIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
-            st.markdown("""
-            - In this project highlights significant sales and return trends from 2010 to 2013. Over this period, you achieved a total of 61K transactions, resulting in a net sale of $73M and a profit margin of $48M, with 214K units sold across 349 products to 701 customers. The transaction volume increased consistently each year, with notable customer engagement categorized into Diamond, Silver, and Gold ratings. On the return side, 14K units were refunded, amounting to a $6M total refund, representing an 8% return rate. Key customers with the highest return rates include Monster Well and BodyBuild Depart, reflecting areas for improvement in product satisfaction.
-            """)
-            # Project 6: Income Statment Dashboard
-            st.write("## Income Statment Dashboard:")
-            col18, col19= st.columns((1, 2))  # Add more columns for additional images
-            with col18:
-                st.image("Screenshot (242).png")
-            with col19:
-                st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNjBiMzViYmEtNDEzYi00MjVkLWJmYzAtMzA0M2I0Y2ZlYTM3IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
-                st.markdown("""
-                - The dashboard provides an income statement analysis for the selected year, comparing current and previous periods across key financial metrics such as revenue, gross profit, net income, and expenses. It highlights percentage changes for each metric and includes visual representations, such as line charts and a donut chart for the net income margin (11.45%). The dashboard is segmented by months and regions, allowing for further filtering and exploration of financial performance over time. Key figures show minor growth in revenue (1%) but a significant drop in net income (34%).
-                """)
+                st.write("### Housing Price Prediction Using ANN:")
+                col20, col21 = st.columns((1, 2))
+                with col20:
+                    st.image("House.png")
+                with col21:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Housing_Price_Prediction_Using_ANN)")
+                    st.markdown("""
+                        - The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
+                        """)
+
+            # Project 8: Sentiment Analysis Using Neural Network
+                st.write("### Sentiment Analysis Using Neural Network:")
+                col22, col23 = st.columns((1, 2))
+                with col22:
+                    st.image("NLP-Sentiment.png")
+                with col23:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/SentimentAnalysis_with_NeuralNetwork)")
+                    st.markdown("""
+                        -This project focuses on sentiment analysis using deep neural networks, specifically LSTM (Long Short-Term Memory) layers. It begins with loading a dataset of movie reviews, followed by text preprocessing steps like tokenization, sequence padding, and stopword removal. A sequential model is built with embedding layers and LSTM for extracting temporal patterns, with dense layers for classification. The model is trained and evaluated for accuracy in predicting sentiments (positive or negative). Results are interpreted, and the trained model is ready for deployment in sentiment analysis applications.
+                    """)                     
+                # Project 3: Winter Forecasting
+                st.write("## Winter Sales Forecasting:")
+                col9, col10 = st.columns((1, 2))
+                with col9:
+                    st.image("timeseries.png")  # Replace with actual image path or URL 
+                with col10:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Time-Series-Forecasting-Multi-Category-Sales/blob/main/Winter_SALES_FORECASTING.ipynb)") 
+                    st.markdown("""
+                        - Built a time-series forecasting model to predict future sales.
+                        - Applied SARIMAX model for time-series data.
+                        - Visualized forecast results and performance metrics using Matplotlib and Seaborn.
+                        """)
+                # Project 4: Supermarket Sales Price Prediction
+                st.write("## Supermarket Sales Prediction:")
+                col11, col12 = st.columns((1, 2))
+                with col11:
+                    st.image("supermarket.png")
+                with col12:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/SuperMarket-Sales-Prediction)")  
+                    st.markdown("""
+                        -The Sales Prediction System for XYZ Stores uses a trained machine learning model to predict sales based on historical data. It helps store managers and analysts make informed decisions by providing real-time sales predictions, optimizing inventory, planning promotions, and improving product placement efficiency.
+                        """)
+                    # Project 1 : Sentiment Analysis
+                st.write("## Sentiment Analysis:")
+                col5,col6 = st.columns((1,2))
+                with col5:
+                    st.image(image)
+                with col6:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Sentiment_Analysis)")
+                    st.markdown("""
+                        - To Perform Sentiment Analysis 1-WordCloud of your positive and negative sentences   2-Lets Perform Emoji Analysis 3-Collect the entire data of youtube 4-which category has maximum likes 5-Analyzing relationship between views and likes 6-Whats channel have the largest number of trending videos?
+                        """)
+
+            # Add other Data Science projects here as needed.
+
     if selected=='Contact':
         st.header("Get in touch!")
         st.write("##")
@@ -260,9 +300,10 @@ def web_portfolio():
         
 
     # Download CV button
-    st.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="AbdulSamad_linkedin_cv.pdf", mime="application/pdf")
+    st.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="MLCV.pdf", mime="application/pdf")
     st.write("##")
     st.write(f"""<div class="subtitle" style="text-align: center;">🌟 Have A Wonderful Day!!! 🌟</div>""", unsafe_allow_html=True)
 
 if __name__ == "__main__":
     web_portfolio()
+
