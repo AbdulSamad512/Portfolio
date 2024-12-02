@@ -207,6 +207,35 @@ def web_portfolio():
                     st.markdown("""
                     - The Patient Emergency Room Visit Report provides an overview of 9,216 total visits, evenly split between administrative and non-administrative appointments. The average patient satisfaction score is 5.47, with 75.10% of services not rated and an average wait time of 35.26 minutes. Most visits occurred during weekdays, with adult patients making up the majority. Referrals primarily lead to general practitioners and orthopedics, while walk-in patients account for 58.59% of the total visits. Patient satisfaction correlates with shorter wait times, as highlighted in the demographic and age group heatmap analysis.
                     """)
+            # Project 5: Risk EQUIPMENT DASHBOARD
+                st.write("## Risk Equipment Dashboard:")
+                col53, col54, col55, col56 = st.columns((1, 1, 1, 1))  # Add more columns for additional images
+                with col53:
+                    st.image("Risk1.png")  # First image
+                with col54:
+                    st.image("Risk2.png")  # Second image
+                with col55:
+                    st.image("Risk3.png")  # Third image
+                with col56:
+                    st.image("Risk4.png")  
+                st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNGMyZTlhMTMtNDE5Ny00ZjQ5LWFlM2UtYTEyZmU5OTY4N2QyIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                st.markdown("""
+                -   Leveraging data visualization tools, I developed interactive dashboards to track and monitor equipment defect
+                trends, identify critical issues, and prioritize mitigation efforts. This data-driven approach resulted in a significant
+                reduction in equipment failures, improving overall system reliability and operational efficiency. By analyzing defect
+                patterns, severity, and likelihood, I was able to implement targeted maintenance strategies and reduce downtime,
+                ultimately contributing to increased productivity and cost savings.
+                """)
+            # Project 6: Fleet Management Dashboard
+                st.write("### Fleet Management Dashboard:")
+                col57,col58 = st.columns((1,2))
+                with col57:
+                    st.image("FLEETMANAGEMENT.png")
+                with col58:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNmQwZWUyMGItNDdhNi00NjA3LWE0NWQtYjI0YjhmZTYyMjk5IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Fleet Management Dashboard: Designed and developed a dynamic Power BI dashboard to monitor fleet operations and key performance indicators. The dashboard provides insights into metrics such as total fuel consumed, maintenance costs, kilometers traveled, and driver performance. Leveraged data modeling and DAX measures to create intuitive visuals, including trend analysis and comparative metrics, enabling stakeholders to make data-driven decisions. The dashboard integrates multiple data sources and ensures seamless data refresh for up-to-date analysis.
+                    """)
 
 
         # Data Science Projects Section
