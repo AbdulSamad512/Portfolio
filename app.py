@@ -307,6 +307,28 @@ def web_portfolio():
                         - To Perform Sentiment Analysis 1-WordCloud of your positive and negative sentences   2-Lets Perform Emoji Analysis 3-Collect the entire data of youtube 4-which category has maximum likes 5-Analyzing relationship between views and likes 6-Whats channel have the largest number of trending videos?
                         """)
 
+                # Project 5: HR Employee Attrition
+                st.write("## Employee Churn Predicition:")
+                col24,col25 = st.columns((1,2))
+                with col24:
+                    st.image("Employee.png")
+                with col25: 
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/HR_Employee_Attrition)")
+                    st.markdown("""
+                        - Developed an Employee Churn Prediction System that uses machine learning to predict employee turnover. Models like RandomForestClassifier and XGBClassifier were optimized using GridSearchCV for parameters such as n_estimators, max_depth, and learning_rate. The Flask-based interface allows users to input employee data and receive predictions in real time. This project showcases expertise in machine learning, hyperparameter tuning, and full-stack development, providing actionable insights for improving employee retention strategies.
+                    """)
+                
+                # Project 6: HR Employee Attrition
+                st.write("## Restaurant Rating Prediction:")
+                col26,col27 = st.columns((1,2))
+                with col26:
+                    st.image("restaurant.png")
+                with col27:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Restaurant_Rating_Prediction)")
+                    st.markdown("""
+                        - This project predicts restaurant ratings based on user-provided features like votes, reviews, and other parameters using machine learning. The model leverages the Extra Trees Regressor, an ensemble method that builds multiple decision trees for regression. The model is trained using the dataset split into x_train and y_train, then tested with x_test to predict outcomes. The R² score evaluates the model's performance, indicating how well it predicts ratings compared to actual values.
+                    """)
+
             # Add other Data Science projects here as needed.
 
     if selected=='Contact':
