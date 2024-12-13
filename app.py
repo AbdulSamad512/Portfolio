@@ -328,6 +328,17 @@ def web_portfolio():
                     st.markdown("""
                         - This project predicts restaurant ratings based on user-provided features like votes, reviews, and other parameters using machine learning. The model leverages the Extra Trees Regressor, an ensemble method that builds multiple decision trees for regression. The model is trained using the dataset split into x_train and y_train, then tested with x_test to predict outcomes. The R² score evaluates the model's performance, indicating how well it predicts ratings compared to actual values.
                     """)
+                
+                # Project 7: Flight Price Prediction
+                st.write("## Flight Price Prediction")
+                col28,col29 = st.column((1,2))
+                with col28:
+                    st.image("Flight_Price_Prediction.png")
+                with col29:
+                    st.markdown("[Visit Github Repository](https://github.com/AbdulSamad512/Flight_Price_Predicition)")
+                    st.markdown("""
+                        - This flight price prediction application is a dynamic machine learning-based tool designed to estimate ticket prices based on inputs such as departure and arrival times, airline, and stopover details. Built with a responsive UI, it integrates powerful predictive models like LightGBM to deliver accurate cost estimates in real-time. Developed with a user-friendly interface, this project demonstrates expertise in web development and data science, showcasing the ability to create practical and impactful applications.
+                    """)
 
             # Add other Data Science projects here as needed.
 
