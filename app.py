@@ -331,7 +331,7 @@ def web_portfolio():
                 
                 # Project 7: Flight Price Prediction
                 st.write("## Flight Price Prediction")
-                col28,col29 = st.column((1,2))
+                col28,col29 = st.columns((1,2))
                 with col28:
                     st.image("Flight_Price_Prediction.png")
                 with col29:
