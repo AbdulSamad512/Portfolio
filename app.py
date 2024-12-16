@@ -242,6 +242,16 @@ def web_portfolio():
             elif subcategory == "Data Science Projects":
                 st.write("## Data Science Projects")
 
+                st.write("### Stock Price Prediction")
+                col31,col32 = st.columns((1,2))
+                with col31:
+                    st.video("stock_price.mp4")
+                with col32:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Stovk_Price_Predcition)")
+                    st.markdown("""
+                        - This project involves building a deep learning model for time-series forecasting using a sequential Long Short-Term Memory (LSTM) network. The model architecture consists of four LSTM layers with increasing units (50, 60, 80, 120) to capture complex temporal dependencies in the data. Dropout layers with rates ranging from 0.2 to 0.5 are incorporated to prevent overfitting. The network is finalized with a Dense layer to output predictions. Designed for input shapes matching the time-series data, the model is trained on preprocessed datasets, leveraging robust recurrent layers. Applications include stock price prediction, weather forecasting, or similar time-series tasks. This architecture is tailored to enhance predictive accuracy while mitigating overfitting risks.
+                    """)
+
                 # Project 9: Gemini AI Voice Assistant
                 st.write("### AI Voice Assistant:")
                 col22, col23 = st.columns((1, 2))
@@ -339,6 +349,7 @@ def web_portfolio():
                     st.markdown("""
                         - This flight price prediction application is a dynamic machine learning-based tool designed to estimate ticket prices based on inputs such as departure and arrival times, airline, and stopover details. Built with a responsive UI, it integrates powerful predictive models like LightGBM to deliver accurate cost estimates in real-time. Developed with a user-friendly interface, this project demonstrates expertise in web development and data science, showcasing the ability to create practical and impactful applications.
                     """)
+                
 
             # Add other Data Science projects here as needed.
 
