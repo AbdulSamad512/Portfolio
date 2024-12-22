@@ -303,7 +303,7 @@ def web_portfolio():
                 with col23:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Ai-Voice-Assistant)")
                     st.markdown("""
-                    - I developed an AI Voice Assistant enabling interactive voice and text-based queries with a "Speak Now" button for seamless interaction. Built using Python (Flask) and HTML/CSS/JavaScript, it integrates voice-to-text, text-to-speech APIs, and pretrained LLMs to provide accurate, context-aware responses. This project highlights practical AI applications in education, customer support, and learning platforms.
+                        - I developed an AI Voice Assistant enabling interactive voice and text-based queries with a "Speak Now" button for seamless interaction. Built using Python (Flask) and HTML/CSS/JavaScript, it integrates voice-to-text, text-to-speech APIs, and pretrained LLMs to provide accurate, context-aware responses. This project highlights practical AI applications in education, customer support, and learning platforms.
                     """)
 
             # Project 7: House Price Prediction Using ANN
@@ -315,7 +315,7 @@ def web_portfolio():
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Housing_Price_Prediction_Using_ANN)")
                     st.markdown("""
                         - The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
-                        """)
+                    """)
 
             # Project 8: Sentiment Analysis Using Neural Network
                 st.write("### Sentiment Analysis Using Neural Network:")
@@ -325,7 +325,7 @@ def web_portfolio():
                 with col23:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/SentimentAnalysis_with_NeuralNetwork)")
                     st.markdown("""
-                        -This project focuses on sentiment analysis using deep neural networks, specifically LSTM (Long Short-Term Memory) layers. It begins with loading a dataset of movie reviews, followed by text preprocessing steps like tokenization, sequence padding, and stopword removal. A sequential model is built with embedding layers and LSTM for extracting temporal patterns, with dense layers for classification. The model is trained and evaluated for accuracy in predicting sentiments (positive or negative). Results are interpreted, and the trained model is ready for deployment in sentiment analysis applications.
+                        - This project focuses on sentiment analysis using deep neural networks, specifically LSTM (Long Short-Term Memory) layers. It begins with loading a dataset of movie reviews, followed by text preprocessing steps like tokenization, sequence padding, and stopword removal. A sequential model is built with embedding layers and LSTM for extracting temporal patterns, with dense layers for classification. The model is trained and evaluated for accuracy in predicting sentiments (positive or negative). Results are interpreted, and the trained model is ready for deployment in sentiment analysis applications.
                     """)                     
                 # Project 3: Winter Forecasting
                 st.write("## Winter Sales Forecasting:")
@@ -347,7 +347,7 @@ def web_portfolio():
                 with col12:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/SuperMarket-Sales-Prediction)")  
                     st.markdown("""
-                        -The Sales Prediction System for XYZ Stores uses a trained machine learning model to predict sales based on historical data. It helps store managers and analysts make informed decisions by providing real-time sales predictions, optimizing inventory, planning promotions, and improving product placement efficiency.
+                            - The Sales Prediction System for XYZ Stores uses a trained machine learning model to predict sales based on historical data. It helps store managers and analysts make informed decisions by providing real-time sales predictions, optimizing inventory, planning promotions, and improving product placement efficiency.
                         """)
                     # Project 1 : Sentiment Analysis
                 st.write("## Sentiment Analysis:")
@@ -357,7 +357,7 @@ def web_portfolio():
                 with col6:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Sentiment_Analysis)")
                     st.markdown("""
-                        - To Perform Sentiment Analysis 1-WordCloud of your positive and negative sentences   2-Lets Perform Emoji Analysis 3-Collect the entire data of youtube 4-which category has maximum likes 5-Analyzing relationship between views and likes 6-Whats channel have the largest number of trending videos?
+                            - To Perform Sentiment Analysis 1-WordCloud of your positive and negative sentences   2-Lets Perform Emoji Analysis 3-Collect the entire data of youtube 4-which category has maximum likes 5-Analyzing relationship between views and likes 6-Whats channel have the largest number of trending videos?
                         """)
                 
 
