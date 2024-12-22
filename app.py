@@ -252,6 +252,16 @@ def web_portfolio():
                         - This project involves building a deep learning model for time-series forecasting using a sequential Long Short-Term Memory (LSTM) network. The model architecture consists of four LSTM layers with increasing units (50, 60, 80, 120) to capture complex temporal dependencies in the data. Dropout layers with rates ranging from 0.2 to 0.5 are incorporated to prevent overfitting. The network is finalized with a Dense layer to output predictions. Designed for input shapes matching the time-series data, the model is trained on preprocessed datasets, leveraging robust recurrent layers. Applications include stock price prediction, weather forecasting, or similar time-series tasks. This architecture is tailored to enhance predictive accuracy while mitigating overfitting risks.
                     """)
 
+                st.write("## Airline Customer Satisfaction MLOPS Projects")
+                col33,col34 = st.columns((1,2))
+                with col33:
+                    st.video("AirlineMLOPS.mp4")
+                with col34:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Airline_Customer_Satisfaction)")
+                    st.markdown("""
+                        - This project involves building a machine learning model to analyze airline customer   satisfaction, utilizing MLOps technologies to streamline and manage the project workflow efficiently.
+                    """)
+
                 # Project 9: Gemini AI Voice Assistant
                 st.write("### AI Voice Assistant:")
                 col22, col23 = st.columns((1, 2))
