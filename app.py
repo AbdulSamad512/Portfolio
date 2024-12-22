@@ -4,10 +4,11 @@ from streamlit_option_menu import option_menu
 import requests
 from streamlit_lottie import st_lottie
 from PIL import Image
-
+import pandas as pd
+import numpy as np
 
 # Page configuration should be called only once at the top of the script
-st.set_page_config(page_title="Abdul Samad Portfolio", page_icon='★', layout="wide")
+st.set_page_config(page_title="Abdul Samad Portfolio", page_icon="★", layout="wide")
 
 def load_lottieurl(url):
     r = requests.get(url)
