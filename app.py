@@ -46,7 +46,7 @@ def web_portfolio():
             cert_imgs.append("data:image/jpg;base64," + b64encode(cert_file.read()).decode())
 
     # Reading Profile
-    with open("MLCV.pdf", "rb") as pdf_file:
+    with open("DDA.pdf", "rb") as pdf_file:
        pdf_bytes = pdf_file.read()
 
     # Add animation on the DP
@@ -383,7 +383,7 @@ def web_portfolio():
         
 
     # Download CV button
-    st.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="DDA.pdf", mime="application/pdf")
+    st.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="AbdulSamad-CV.pdf", mime="application/pdf")
     st.write("##")
     st.write(f"""<div class="subtitle" style="text-align: center;">🌟 Have A Wonderful Day!!! 🌟</div>""", unsafe_allow_html=True)
 
