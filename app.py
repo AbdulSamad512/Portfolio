@@ -252,6 +252,16 @@ def web_portfolio():
                         - This project involves building a deep learning model for time-series forecasting using a sequential Long Short-Term Memory (LSTM) network. The model architecture consists of four LSTM layers with increasing units (50, 60, 80, 120) to capture complex temporal dependencies in the data. Dropout layers with rates ranging from 0.2 to 0.5 are incorporated to prevent overfitting. The network is finalized with a Dense layer to output predictions. Designed for input shapes matching the time-series data, the model is trained on preprocessed datasets, leveraging robust recurrent layers. Applications include stock price prediction, weather forecasting, or similar time-series tasks. This architecture is tailored to enhance predictive accuracy while mitigating overfitting risks.
                     """)
 
+                st.write("Potato_Disease_Classification")
+                col35,col36 = st.columns((1,2))
+                with col35:
+                    st.video("Potato_Disease_Classification.mp4")
+                with col36:
+                    st.markdown("[Visit Github Project](https://github.com/AbdulSamad512/Potato_Disease_Classification)")
+                    st.markdown("""
+                        - The Potato Disease Classification project leverages Convolutional Neural Networks (CNNs) to accurately identify and classify diseases in potato plants based on leaf images. This project involves comprehensive data preprocessing, augmentation techniques, and the application of deep learning methodologies to train a robust model capable of distinguishing between healthy and diseased leaves. The project is aimed at supporting farmers and agricultural stakeholders in early disease detection, enabling timely interventions to reduce crop losses. This solution demonstrates expertise in machine learning, image processing, and practical problem-solving in the agriculture domain. The model's performance is optimized to ensure high accuracy and reliability for real-world applications.
+                    """)
+                    
                 st.write("## Airline Customer Satisfaction MLOPS Projects")
                 col33,col34 = st.columns((1,2))
                 with col33:
