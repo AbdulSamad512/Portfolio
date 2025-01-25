@@ -46,7 +46,7 @@ def web_portfolio():
             cert_imgs.append("data:image/jpg;base64," + b64encode(cert_file.read()).decode())
 
     # Reading Profile
-    with open("DDA.pdf", "rb") as pdf_file:
+    with open("UpdatedDaSc.pdf", "rb") as pdf_file:
        pdf_bytes = pdf_file.read()
 
     # Add animation on the DP
@@ -252,16 +252,6 @@ def web_portfolio():
                         - This project involves building a deep learning model for time-series forecasting using a sequential Long Short-Term Memory (LSTM) network. The model architecture consists of four LSTM layers with increasing units (50, 60, 80, 120) to capture complex temporal dependencies in the data. Dropout layers with rates ranging from 0.2 to 0.5 are incorporated to prevent overfitting. The network is finalized with a Dense layer to output predictions. Designed for input shapes matching the time-series data, the model is trained on preprocessed datasets, leveraging robust recurrent layers. Applications include stock price prediction, weather forecasting, or similar time-series tasks. This architecture is tailored to enhance predictive accuracy while mitigating overfitting risks.
                     """)
 
-                st.write("Potato_Disease_Classification")
-                col35,col36 = st.columns((1,2))
-                with col35:
-                    st.video("Potato_Disease_Classification.mp4")
-                with col36:
-                    st.markdown("[Visit Github Project](https://github.com/AbdulSamad512/Potato_Disease_Classification)")
-                    st.markdown("""
-                        - The Potato Disease Classification project leverages Convolutional Neural Networks (CNNs) to accurately identify and classify diseases in potato plants based on leaf images. This project involves comprehensive data preprocessing, augmentation techniques, and the application of deep learning methodologies to train a robust model capable of distinguishing between healthy and diseased leaves. The project is aimed at supporting farmers and agricultural stakeholders in early disease detection, enabling timely interventions to reduce crop losses. This solution demonstrates expertise in machine learning, image processing, and practical problem-solving in the agriculture domain. The model's performance is optimized to ensure high accuracy and reliability for real-world applications.
-                    """)
-                    
                 st.write("## Airline Customer Satisfaction MLOPS Projects")
                 col33,col34 = st.columns((1,2))
                 with col33:
@@ -316,7 +306,7 @@ def web_portfolio():
                     - I developed an AI Voice Assistant enabling interactive voice and text-based queries with a "Speak Now" button for seamless interaction. Built using Python (Flask) and HTML/CSS/JavaScript, it integrates voice-to-text, text-to-speech APIs, and pretrained LLMs to provide accurate, context-aware responses. This project highlights practical AI applications in education, customer support, and learning platforms.
                     """)
 
-            # Project 7: House Price Prediction Using ANN
+                # Project 7: House Price Prediction Using ANN
                 st.write("### Housing Price Prediction Using ANN:")
                 col20, col21 = st.columns((1, 2))
                 with col20:
@@ -327,7 +317,7 @@ def web_portfolio():
                         - The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
                         """)
 
-            # Project 8: Sentiment Analysis Using Neural Network
+                # Project 8: Sentiment Analysis Using Neural Network
                 st.write("### Sentiment Analysis Using Neural Network:")
                 col22, col23 = st.columns((1, 2))
                 with col22:
@@ -359,7 +349,7 @@ def web_portfolio():
                     st.markdown("""
                         -The Sales Prediction System for XYZ Stores uses a trained machine learning model to predict sales based on historical data. It helps store managers and analysts make informed decisions by providing real-time sales predictions, optimizing inventory, planning promotions, and improving product placement efficiency.
                         """)
-                    # Project 1 : Sentiment Analysis
+                # Project 1 : Sentiment Analysis
                 st.write("## Sentiment Analysis:")
                 col5,col6 = st.columns((1,2))
                 with col5:
@@ -369,7 +359,37 @@ def web_portfolio():
                     st.markdown("""
                         - To Perform Sentiment Analysis 1-WordCloud of your positive and negative sentences   2-Lets Perform Emoji Analysis 3-Collect the entire data of youtube 4-which category has maximum likes 5-Analyzing relationship between views and likes 6-Whats channel have the largest number of trending videos?
                         """)
-                
+
+                # Project : Customer Churn Prediction   
+                st.write("## Customer Churn Prediction:")
+                col31,col32 = st.columns((1,2))
+                with col31:
+                    st.image("CHURNN.png")
+                with col32:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Customer_Churn-Prediction)")
+                    st.markdown("""
+                        - This repository contains a Customer Churn Prediction project aimed at identifying customers likely to leave a business. The project leverages machine learning techniques to analyze customer behavior and predict churn, enabling data-driven decision-making. It includes data preprocessing, feature engineering, and model training using algorithms like Logistic Regression, Random Forest, and XGBoost. The repository provides a clear workflow, Python code, and visualizations to ensure reproducibility and understanding. This solution is particularly useful for businesses in improving customer retention strategies.
+                        """)
+                # Project : Movie Recommendation System 
+                st.write("## Movie Recommendation System:")
+                col27,col28 = st.columns((1,2))
+                with col27:
+                    st.image("Movie.png")
+                with col28:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Movie_Recommendation_System)")
+                    st.markdown("""
+                        - This repository showcases a Movie Recommendation System designed to suggest movies based on user preferences. The project employs content-based filtering techniques, utilizing features such as genres, cast, and keywords to recommend similar movies. It includes data preprocessing, feature extraction, and vectorization using TF-IDF and cosine similarity for recommendation generation. The repository provides Python code, detailed explanations, and visualizations to ensure clarity and usability. This system can be applied to enhance user experience in entertainment platforms.
+                        """)
+                # Project : Chest X-Ray 
+                st.write("## Chest Xray Analysis:")
+                col29,col30 = st.columns((1,2))
+                with col29:
+                    st.image("chestxray.png")
+                with col30:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Chest_Xray_Detection)")
+                    st.markdown("""
+                        - This repository contains a Chest X-ray Detection project aimed at diagnosing lung diseases such as pneumonia from chest X-ray images. The project leverages deep learning techniques, utilizing Convolutional Neural Networks (CNNs) for image classification. It includes steps such as data preprocessing, data augmentation, model training, and evaluation to ensure high accuracy. The repository provides well-structured Python code and visualizations for easy understanding and reproducibility. This solution has potential applications in healthcare for early disease detection and diagnosis.
+                        """)
 
             # Add other Data Science projects here as needed.
 
@@ -393,7 +413,7 @@ def web_portfolio():
         
 
     # Download CV button
-    st.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="AbdulSamad-CV.pdf", mime="application/pdf")
+    st.download_button(label="📄 Download my CV", data=pdf_bytes, file_name="DSCV.pdf", mime="application/pdf")
     st.write("##")
     st.write(f"""<div class="subtitle" style="text-align: center;">🌟 Have A Wonderful Day!!! 🌟</div>""", unsafe_allow_html=True)
 
