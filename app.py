@@ -303,7 +303,7 @@ def web_portfolio():
                 with col23:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Ai-Voice-Assistant)")
                     st.markdown("""
-                    - I developed an AI Voice Assistant enabling interactive voice and text-based queries with a "Speak Now" button for seamless interaction. Built using Python (Flask) and HTML/CSS/JavaScript, it integrates voice-to-text, text-to-speech APIs, and pretrained LLMs to provide accurate, context-aware responses. This project highlights practical AI applications in education, customer support, and learning platforms.
+                    -I developed an AI Voice Assistant enabling interactive voice and text-based queries with a "Speak Now" button for seamless interaction. Built using Python (Flask) and HTML/CSS/JavaScript, it integrates voice-to-text, text-to-speech APIs, and pretrained LLMs to provide accurate, context-aware responses. This project highlights practical AI applications in education, customer support, and learning platforms.
                     """)
 
                 # Project 7: House Price Prediction Using ANN
@@ -314,7 +314,7 @@ def web_portfolio():
                 with col21:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Housing_Price_Prediction_Using_ANN)")
                     st.markdown("""
-                        - The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
+                        -The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
                         """)
 
                 # Project 8: Sentiment Analysis Using Neural Network
@@ -357,7 +357,7 @@ def web_portfolio():
                 with col6:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Sentiment_Analysis)")
                     st.markdown("""
-                        - To Perform Sentiment Analysis 1-WordCloud of your positive and negative sentences   2-Lets Perform Emoji Analysis 3-Collect the entire data of youtube 4-which category has maximum likes 5-Analyzing relationship between views and likes 6-Whats channel have the largest number of trending videos?
+                        -To Perform Sentiment Analysis 1-WordCloud of your positive and negative sentences   2-Lets Perform Emoji Analysis 3-Collect the entire data of youtube 4-which category has maximum likes 5-Analyzing relationship between views and likes 6-Whats channel have the largest number of trending videos?
                         """)
 
                 # Project : Customer Churn Prediction   
@@ -368,7 +368,7 @@ def web_portfolio():
                 with col32:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Customer_Churn-Prediction)")
                     st.markdown("""
-                        - This repository contains a Customer Churn Prediction project aimed at identifying customers likely to leave a business. The project leverages machine learning techniques to analyze customer behavior and predict churn, enabling data-driven decision-making. It includes data preprocessing, feature engineering, and model training using algorithms like Logistic Regression, Random Forest, and XGBoost. The repository provides a clear workflow, Python code, and visualizations to ensure reproducibility and understanding. This solution is particularly useful for businesses in improving customer retention strategies.
+                        -This repository contains a Customer Churn Prediction project aimed at identifying customers likely to leave a business. The project leverages machine learning techniques to analyze customer behavior and predict churn, enabling data-driven decision-making. It includes data preprocessing, feature engineering, and model training using algorithms like Logistic Regression, Random Forest, and XGBoost. The repository provides a clear workflow, Python code, and visualizations to ensure reproducibility and understanding. This solution is particularly useful for businesses in improving customer retention strategies.
                         """)
                 # Project : Movie Recommendation System 
                 st.write("## Movie Recommendation System:")
@@ -378,7 +378,7 @@ def web_portfolio():
                 with col28:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Movie_Recommendation_System)")
                     st.markdown("""
-                        - This repository showcases a Movie Recommendation System designed to suggest movies based on user preferences. The project employs content-based filtering techniques, utilizing features such as genres, cast, and keywords to recommend similar movies. It includes data preprocessing, feature extraction, and vectorization using TF-IDF and cosine similarity for recommendation generation. The repository provides Python code, detailed explanations, and visualizations to ensure clarity and usability. This system can be applied to enhance user experience in entertainment platforms.
+                        -This repository showcases a Movie Recommendation System designed to suggest movies based on user preferences. The project employs content-based filtering techniques, utilizing features such as genres, cast, and keywords to recommend similar movies. It includes data preprocessing, feature extraction, and vectorization using TF-IDF and cosine similarity for recommendation generation. The repository provides Python code, detailed explanations, and visualizations to ensure clarity and usability. This system can be applied to enhance user experience in entertainment platforms.
                         """)
                 # Project : Chest X-Ray 
                 st.write("## Chest Xray Analysis:")
@@ -388,7 +388,7 @@ def web_portfolio():
                 with col30:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Chest_Xray_Detection)")
                     st.markdown("""
-                        - This repository contains a Chest X-ray Detection project aimed at diagnosing lung diseases such as pneumonia from chest X-ray images. The project leverages deep learning techniques, utilizing Convolutional Neural Networks (CNNs) for image classification. It includes steps such as data preprocessing, data augmentation, model training, and evaluation to ensure high accuracy. The repository provides well-structured Python code and visualizations for easy understanding and reproducibility. This solution has potential applications in healthcare for early disease detection and diagnosis.
+                        -This repository contains a Chest X-ray Detection project aimed at diagnosing lung diseases such as pneumonia from chest X-ray images. The project leverages deep learning techniques, utilizing Convolutional Neural Networks (CNNs) for image classification. It includes steps such as data preprocessing, data augmentation, model training, and evaluation to ensure high accuracy. The repository provides well-structured Python code and visualizations for easy understanding and reproducibility. This solution has potential applications in healthcare for early disease detection and diagnosis.
                         """)
 
             # Add other Data Science projects here as needed.
