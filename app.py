@@ -157,6 +157,16 @@ def web_portfolio():
         # Dashboards Section
             if subcategory == "Dashboards":
                 st.write("## Dashboards")
+
+                st.write("### SALES DASHBOARD:")
+                col90,col91 = st.columns((1,2))
+                with col90:
+                    st.video("SalesDashboard.mp4")
+                with col91:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiY2I1YzJjMzAtM2U1OS00NWUxLWE0OGEtOWViMDY0OWU1MTU0IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - This Power BI Sales Dashboard provides insights into transactions, revenue, and sales performance across different channels. It breaks down performance by managers, supervisors, and salespersons while comparing revenue trends against the budget. With interactive filters, it helps businesses track trends, identify top performers, and make data-driven decisions efficiently.
+                    """)
             
                 # Project 1: Finance Dashboard
                 st.write("### Finance Dashboard:")
