@@ -113,7 +113,7 @@ def web_portfolio():
             with col1:
                 st.write("##")
                 st.subheader("I am Abdul Samad")
-                st.title("Undergraduate at BSAI 7th Semester")
+                st.title("Undergraduate at BSAI 8th Semester")
                 st.markdown("""
                 - 🧑‍💻 I am a **Mid Level Data Analyst and BI-Consultant** at [Diamond Supermarket HO], 
                 where I am currently working on a Data Science& Machine Learning project for Keep Learning.
