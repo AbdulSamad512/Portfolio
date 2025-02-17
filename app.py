@@ -113,7 +113,7 @@ def web_portfolio():
             with col1:
                 st.write("##")
                 st.subheader("I am Abdul Samad")
-                st.title("Undergraduate at BSAI 8th Semester")
+                st.title("Undergraduate at BSAI 7th Semester")
                 st.markdown("""
                 - 🧑‍💻 I am a **Mid Level Data Analyst and BI-Consultant** at [Diamond Supermarket HO], 
                 where I am currently working on a Data Science& Machine Learning project for Keep Learning.
@@ -156,9 +156,19 @@ def web_portfolio():
 
         # Dashboards Section
             if subcategory == "Dashboards":
-                st.write("## Dashboards")
+                st.write("## Dashboards:")
 
-                st.write("### SALES DASHBOARD:")
+                st.write("### 🚀 Optimizing Ticket Performance with Power BI! 📊:")
+                col92,col93 = st.columns((1,2))
+                with col92:
+                    st.video("Ticket.mp4")
+                with col93:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNDczMjg1ZDktMmM5MC00ZjU0LTk1ZjMtYThiZDhmMWM4ZTZhIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - I recently developed an interactive Ticket Performance Dashboard in Power BI to analyze  SLA compliance, and resolution trends. The dashboard provides data-driven insights into key metrics such as ticket volume, agent performance, and issue categories, helping businesses improve efficiency and decision-making.
+                    """)
+
+                st.write("### 🚀 Optimizing SALES DASHBOARD with Power BI! 📊:")
                 col90,col91 = st.columns((1,2))
                 with col90:
                     st.video("SalesDashboard.mp4")
@@ -167,9 +177,9 @@ def web_portfolio():
                     st.markdown("""
                     - This Power BI Sales Dashboard provides insights into transactions, revenue, and sales performance across different channels. It breaks down performance by managers, supervisors, and salespersons while comparing revenue trends against the budget. With interactive filters, it helps businesses track trends, identify top performers, and make data-driven decisions efficiently.
                     """)
-            
+
                 # Project 1: Finance Dashboard
-                st.write("### Finance Dashboard:")
+                st.write("### 🚀 Optimizing Finance Dashboard with Power BI! 📊:")
                 col7, col8 = st.columns((1, 2))
                 with col7:
                     st.image("Finance.png")
@@ -180,7 +190,7 @@ def web_portfolio():
                     """)
 
                 # Project 2: Sales Dashboard
-                st.write("## Sales Dashboard:")
+                st.write("### 🚀 Optimizing Sales Dashboard with Power BI! 📊:")
                 col13, col14, col15, col16, col17 = st.columns((1, 1, 1, 1,1))  # Add more columns for additional images
                 with col13:
                     st.image("Screenshot (237).png")  # First image
@@ -198,7 +208,7 @@ def web_portfolio():
                 """)
 
             # Project 3: Income Statement Dashboard
-                st.write("### Income Statement Dashboard:")
+                st.write("### 🚀 Optimizing Income Statement Dashboard with Power BI! 📊:")
                 col18, col19 = st.columns((1, 2))
                 with col18:
                     st.image("Screenshot (242).png")
@@ -207,8 +217,10 @@ def web_portfolio():
                     st.markdown("""
                         -  The dashboard provides an income statement analysis for the selected year, comparing current and previous periods across key financial metrics such as revenue, gross profit, net income, and expenses. It highlights percentage changes for each metric and includes visual representations, such as line charts and a donut chart for the net income margin (11.45%). The dashboard is segmented by months and regions, allowing for further filtering and exploration of financial performance over time. Key figures show minor growth in revenue (1%) but a significant drop in net income (34%).
                         """)
+
+
             # Project 4: Patient Emergency Room Visit Report 
-                st.write("### Patient Emergency Room Visit Report")
+                st.write("### 🚀 Optimizing Patient Emergency Room Visit Report with Power BI! 📊")
                 col51,col52 = st.columns((1,2))
                 with col51:
                     st.image("Patient.png")
@@ -217,8 +229,10 @@ def web_portfolio():
                     st.markdown("""
                     - The Patient Emergency Room Visit Report provides an overview of 9,216 total visits, evenly split between administrative and non-administrative appointments. The average patient satisfaction score is 5.47, with 75.10% of services not rated and an average wait time of 35.26 minutes. Most visits occurred during weekdays, with adult patients making up the majority. Referrals primarily lead to general practitioners and orthopedics, while walk-in patients account for 58.59% of the total visits. Patient satisfaction correlates with shorter wait times, as highlighted in the demographic and age group heatmap analysis.
                     """)
+
+
             # Project 5: Risk EQUIPMENT DASHBOARD
-                st.write("## Risk Equipment Dashboard:")
+                st.write("### 🚀 Optimizing Risk Equipment Dashboard with Power BI! 📊:")
                 col53, col54, col55, col56 = st.columns((1, 1, 1, 1))  # Add more columns for additional images
                 with col53:
                     st.image("Risk1.png")  # First image
@@ -236,8 +250,10 @@ def web_portfolio():
                 patterns, severity, and likelihood, I was able to implement targeted maintenance strategies and reduce downtime,
                 ultimately contributing to increased productivity and cost savings.
                 """)
+
+
             # Project 6: Fleet Management Dashboard
-                st.write("### Fleet Management Dashboard:")
+                st.write("### 🚀 Optimizing Fleet Management Dashboard with Power BI! 📊:")
                 col57,col58 = st.columns((1,2))
                 with col57:
                     st.image("FLEETMANAGEMENT.png")
@@ -313,7 +329,7 @@ def web_portfolio():
                 with col23:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Ai-Voice-Assistant)")
                     st.markdown("""
-                    -I developed an AI Voice Assistant enabling interactive voice and text-based queries with a "Speak Now" button for seamless interaction. Built using Python (Flask) and HTML/CSS/JavaScript, it integrates voice-to-text, text-to-speech APIs, and pretrained LLMs to provide accurate, context-aware responses. This project highlights practical AI applications in education, customer support, and learning platforms.
+                    - I developed an AI Voice Assistant enabling interactive voice and text-based queries with a "Speak Now" button for seamless interaction. Built using Python (Flask) and HTML/CSS/JavaScript, it integrates voice-to-text, text-to-speech APIs, and pretrained LLMs to provide accurate, context-aware responses. This project highlights practical AI applications in education, customer support, and learning platforms.
                     """)
 
                 # Project 7: House Price Prediction Using ANN
@@ -324,7 +340,7 @@ def web_portfolio():
                 with col21:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Housing_Price_Prediction_Using_ANN)")
                     st.markdown("""
-                        -The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
+                        - The Housing Price Prediction using ANN project uses artificial neural networks to predict house prices based on features like longitude, number of bedrooms, population, and housing median age. It involves data preprocessing, feature engineering, model training, evaluation, and fine-tuning to accurately predict prices for new data.
                         """)
 
                 # Project 8: Sentiment Analysis Using Neural Network
@@ -367,7 +383,7 @@ def web_portfolio():
                 with col6:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Sentiment_Analysis)")
                     st.markdown("""
-                        -To Perform Sentiment Analysis 1-WordCloud of your positive and negative sentences   2-Lets Perform Emoji Analysis 3-Collect the entire data of youtube 4-which category has maximum likes 5-Analyzing relationship between views and likes 6-Whats channel have the largest number of trending videos?
+                        - To Perform Sentiment Analysis 1-WordCloud of your positive and negative sentences   2-Lets Perform Emoji Analysis 3-Collect the entire data of youtube 4-which category has maximum likes 5-Analyzing relationship between views and likes 6-Whats channel have the largest number of trending videos?
                         """)
 
                 # Project : Customer Churn Prediction   
@@ -378,7 +394,7 @@ def web_portfolio():
                 with col32:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Customer_Churn-Prediction)")
                     st.markdown("""
-                        -This repository contains a Customer Churn Prediction project aimed at identifying customers likely to leave a business. The project leverages machine learning techniques to analyze customer behavior and predict churn, enabling data-driven decision-making. It includes data preprocessing, feature engineering, and model training using algorithms like Logistic Regression, Random Forest, and XGBoost. The repository provides a clear workflow, Python code, and visualizations to ensure reproducibility and understanding. This solution is particularly useful for businesses in improving customer retention strategies.
+                        - This repository contains a Customer Churn Prediction project aimed at identifying customers likely to leave a business. The project leverages machine learning techniques to analyze customer behavior and predict churn, enabling data-driven decision-making. It includes data preprocessing, feature engineering, and model training using algorithms like Logistic Regression, Random Forest, and XGBoost. The repository provides a clear workflow, Python code, and visualizations to ensure reproducibility and understanding. This solution is particularly useful for businesses in improving customer retention strategies.
                         """)
                 # Project : Movie Recommendation System 
                 st.write("## Movie Recommendation System:")
@@ -388,7 +404,7 @@ def web_portfolio():
                 with col28:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Movie_Recommendation_System)")
                     st.markdown("""
-                        -This repository showcases a Movie Recommendation System designed to suggest movies based on user preferences. The project employs content-based filtering techniques, utilizing features such as genres, cast, and keywords to recommend similar movies. It includes data preprocessing, feature extraction, and vectorization using TF-IDF and cosine similarity for recommendation generation. The repository provides Python code, detailed explanations, and visualizations to ensure clarity and usability. This system can be applied to enhance user experience in entertainment platforms.
+                        - This repository showcases a Movie Recommendation System designed to suggest movies based on user preferences. The project employs content-based filtering techniques, utilizing features such as genres, cast, and keywords to recommend similar movies. It includes data preprocessing, feature extraction, and vectorization using TF-IDF and cosine similarity for recommendation generation. The repository provides Python code, detailed explanations, and visualizations to ensure clarity and usability. This system can be applied to enhance user experience in entertainment platforms.
                         """)
                 # Project : Chest X-Ray 
                 st.write("## Chest Xray Analysis:")
@@ -398,7 +414,7 @@ def web_portfolio():
                 with col30:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Chest_Xray_Detection)")
                     st.markdown("""
-                        -This repository contains a Chest X-ray Detection project aimed at diagnosing lung diseases such as pneumonia from chest X-ray images. The project leverages deep learning techniques, utilizing Convolutional Neural Networks (CNNs) for image classification. It includes steps such as data preprocessing, data augmentation, model training, and evaluation to ensure high accuracy. The repository provides well-structured Python code and visualizations for easy understanding and reproducibility. This solution has potential applications in healthcare for early disease detection and diagnosis.
+                        - This repository contains a Chest X-ray Detection project aimed at diagnosing lung diseases such as pneumonia from chest X-ray images. The project leverages deep learning techniques, utilizing Convolutional Neural Networks (CNNs) for image classification. It includes steps such as data preprocessing, data augmentation, model training, and evaluation to ensure high accuracy. The repository provides well-structured Python code and visualizations for easy understanding and reproducibility. This solution has potential applications in healthcare for early disease detection and diagnosis.
                         """)
 
             # Add other Data Science projects here as needed.
