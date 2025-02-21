@@ -158,6 +158,16 @@ def web_portfolio():
             if subcategory == "Dashboards":
                 st.write("## Dashboards:")
 
+                st.write("## 🚀 Optimizing Sales Dashboard with Power BI! 📊:")
+                col94,col95 = st.columns((1,2))
+                with col94:
+                    st.image("FoodPandaPart1.png")
+                with col95:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiM2E5OWUzNDUtMTFlNS00MzRjLTgyZjQtMTY3ZTJmNTM1YzhmIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Transforming raw data into powerful insights! This interactive sales dashboard built in Power BI helps businesses track performance, analyze customer trends, and make data-driven decisions effortlessly. (Dataset used is dummy for visualization purposes
+                    """)
+
                 st.write("### 🚀 Optimizing Ticket Performance with Power BI! 📊:")
                 col92,col93 = st.columns((1,2))
                 with col92:
