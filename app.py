@@ -113,7 +113,7 @@ def web_portfolio():
             with col1:
                 st.write("##")
                 st.subheader("I am Abdul Samad")
-                st.title("Undergraduate at BSAI 8th Semester")
+                st.title("Undergraduate at BSAI 7th Semester")
                 st.markdown("""
                 - 🧑‍💻 I am a **Mid Level Data Analyst and BI-Consultant** at [Diamond Supermarket HO], 
                 where I am currently working on a Data Science& Machine Learning project for Keep Learning.
@@ -152,21 +152,11 @@ def web_portfolio():
         with st.container():
             st.header("My Projects")
         # Add subcategories for Dashboards and Data Science Projects
-            subcategory = st.radio("Select Project Category:", ["Dashboards", "Data Science Projects"], horizontal=True)
+            subcategory = st.radio("Select Project Category:", ["Dashboards", "Data Science Projects", "Data base & ETL Projects"], horizontal=True)
 
         # Dashboards Section
             if subcategory == "Dashboards":
                 st.write("## Dashboards:")
-
-                st.write("## 🚀 Optimizing Sales Dashboard with Power BI! 📊:")
-                col94,col95 = st.columns((1,2))
-                with col94:
-                    st.image("FoodPandaPart1.png")
-                with col95:
-                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiM2E5OWUzNDUtMTFlNS00MzRjLTgyZjQtMTY3ZTJmNTM1YzhmIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
-                    st.markdown("""
-                    - Transforming raw data into powerful insights! This interactive sales dashboard built in Power BI helps businesses track performance, analyze customer trends, and make data-driven decisions effortlessly. (Dataset used is dummy for visualization purposes
-                    """)
 
                 st.write("### 🚀 Optimizing Ticket Performance with Power BI! 📊:")
                 col92,col93 = st.columns((1,2))
@@ -272,7 +262,6 @@ def web_portfolio():
                     st.markdown("""
                     - Fleet Management Dashboard: Designed and developed a dynamic Power BI dashboard to monitor fleet operations and key performance indicators. The dashboard provides insights into metrics such as total fuel consumed, maintenance costs, kilometers traveled, and driver performance. Leveraged data modeling and DAX measures to create intuitive visuals, including trend analysis and comparative metrics, enabling stakeholders to make data-driven decisions. The dashboard integrates multiple data sources and ensures seamless data refresh for up-to-date analysis.
                     """)
-
 
         # Data Science Projects Section
             elif subcategory == "Data Science Projects":
@@ -418,7 +407,7 @@ def web_portfolio():
                         """)
                 # Project : Chest X-Ray 
                 st.write("## Chest Xray Analysis:")
-                col29,col30 = st.columns((1,2))
+                col29,col30 = st.columns((1,2)) 
                 with col29:
                     st.image("chestxray.png")
                 with col30:
@@ -426,24 +415,28 @@ def web_portfolio():
                     st.markdown("""
                         - This repository contains a Chest X-ray Detection project aimed at diagnosing lung diseases such as pneumonia from chest X-ray images. The project leverages deep learning techniques, utilizing Convolutional Neural Networks (CNNs) for image classification. It includes steps such as data preprocessing, data augmentation, model training, and evaluation to ensure high accuracy. The repository provides well-structured Python code and visualizations for easy understanding and reproducibility. This solution has potential applications in healthcare for early disease detection and diagnosis.
                         """)
-            elif subcategory == "Data Warehousing":
-                st.write("## Data Warehousing")
+                    
+            elif subcategory == "Data base & ETL Projects":
+                st.write("## Data base & ETL Projects")
 
-                st.write("### Data Warehousing with Sql-Server")
-                col41,col42 = st.columns((1,2))
+                st.write("### Data Warehousing with SQL Server")
+                col41, col42 = st.columns((1, 2))
                 with col41:
                     st.image("data_architecture.png")
                 with col42:
                     st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Sql-Data-Warehouse-Project)")
                     st.markdown("""
-                        💡 Project Highlights:
-                            ✅ Designed a Modern Data Warehouse with Medallion Architecture (Bronze, Silver, Gold layers)
-                            ✅ Built robust ETL pipelines to process sales data from ERP & CRM sources
-                            ✅ Implemented Data Modeling with Fact & Dimension tables for analytics
-                            ✅ Developed SQL-based business insights on Customer Behavior, Sales Trends & Product Performance
-                            ✅ Created clear documentation & architecture diagrams to guide stakeholders
-                            """)
-                            
+                        💡 **Project Highlights**:
+                        ✅ Designed a Modern Data Warehouse with Medallion Architecture (Bronze, Silver, Gold layers)  
+                        ✅ Built robust ETL pipelines to process sales data from ERP & CRM sources  
+                        ✅ Implemented Data Modeling with Fact & Dimension tables for analytics  
+                        ✅ Developed SQL-based business insights on Customer Behavior, Sales Trends & Product Performance  
+                        ✅ Created clear documentation & architecture diagrams to guide stakeholders  
+                    """)
+
+            else:
+                st.write("Please select a valid project category.")     
+           
             # Add other Data Science projects here as needed.
 
     if selected=='Contact':
