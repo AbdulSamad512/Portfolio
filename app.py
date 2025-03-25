@@ -426,7 +426,24 @@ def web_portfolio():
                     st.markdown("""
                         - This repository contains a Chest X-ray Detection project aimed at diagnosing lung diseases such as pneumonia from chest X-ray images. The project leverages deep learning techniques, utilizing Convolutional Neural Networks (CNNs) for image classification. It includes steps such as data preprocessing, data augmentation, model training, and evaluation to ensure high accuracy. The repository provides well-structured Python code and visualizations for easy understanding and reproducibility. This solution has potential applications in healthcare for early disease detection and diagnosis.
                         """)
+            elif subcategory == "Data Warehousing":
+                st.write("## Data Warehousing")
 
+                st.write("### Data Warehousing with Sql-Server")
+                col41,col42 = st.columns((1,2))
+                with col41:
+                    st.image("data_architecture.png")
+                with col42:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Sql-Data-Warehouse-Project)")
+                    st.markdown("""
+                        💡 Project Highlights:
+                            ✅ Designed a Modern Data Warehouse with Medallion Architecture (Bronze, Silver, Gold layers)
+                            ✅ Built robust ETL pipelines to process sales data from ERP & CRM sources
+                            ✅ Implemented Data Modeling with Fact & Dimension tables for analytics
+                            ✅ Developed SQL-based business insights on Customer Behavior, Sales Trends & Product Performance
+                            ✅ Created clear documentation & architecture diagrams to guide stakeholders
+                            """)
+                            
             # Add other Data Science projects here as needed.
 
     if selected=='Contact':
