@@ -39,7 +39,7 @@ def web_portfolio():
         img = "data:image/jpg;base64," + b64encode(img_file.read()).decode()
 
     # Get Certificate Images
-    cert_img_paths = ["certificate.png", "download.png", "down.png"]
+    cert_img_paths = ["certificate.png", "download.png", "down.png", "MLIntern.png"]
     cert_imgs = []
     for cert_path in cert_img_paths:
         with open(cert_path, "rb") as cert_file:
@@ -141,13 +141,14 @@ def web_portfolio():
                 with col4:
                     # Display 3 certificate images side by side
                     st.write("## My Certificates:")
-                    cert_cols = st.columns(3)
+                    cert_cols = st.columns(4)
                     for idx, cert_img in enumerate(cert_imgs):
                         cert_cols[idx].write(f"""
                         <div style="text-align:center;">
                         <img src="{cert_img}" alt="Certificate {idx+1}" style='width: 150px; height: 150px; margin: 10px;'>
                         </div>
                         """, unsafe_allow_html=True)
+
     if selected == "Projects":
         with st.container():
             st.header("My Projects")
@@ -159,20 +160,20 @@ def web_portfolio():
                 st.write("## Dashboards:")
 
                 st.write("### 🚀 Optimizing Ticket Performance with Power BI! 📊:")
-                col92,col93 = st.columns((1,2))
-                with col92:
+                col1,col2 = st.columns((1,2))
+                with col1:
                     st.video("Ticket.mp4")
-                with col93:
+                with col2:
                     st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNDczMjg1ZDktMmM5MC00ZjU0LTk1ZjMtYThiZDhmMWM4ZTZhIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
                     st.markdown("""
                     - I recently developed an interactive Ticket Performance Dashboard in Power BI to analyze  SLA compliance, and resolution trends. The dashboard provides data-driven insights into key metrics such as ticket volume, agent performance, and issue categories, helping businesses improve efficiency and decision-making.
                     """)
 
                 st.write("### 🚀 Optimizing SALES DASHBOARD with Power BI! 📊:")
-                col90,col91 = st.columns((1,2))
-                with col90:
+                col3,col4 = st.columns((1,2))
+                with col3:
                     st.video("SalesDashboard.mp4")
-                with col91:
+                with col4:
                     st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiY2I1YzJjMzAtM2U1OS00NWUxLWE0OGEtOWViMDY0OWU1MTU0IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
                     st.markdown("""
                     - This Power BI Sales Dashboard provides insights into transactions, revenue, and sales performance across different channels. It breaks down performance by managers, supervisors, and salespersons while comparing revenue trends against the budget. With interactive filters, it helps businesses track trends, identify top performers, and make data-driven decisions efficiently.
@@ -180,10 +181,10 @@ def web_portfolio():
 
                 # Project 1: Finance Dashboard
                 st.write("### 🚀 Optimizing Finance Dashboard with Power BI! 📊:")
-                col7, col8 = st.columns((1, 2))
-                with col7:
+                col5, col6 = st.columns((1, 2))
+                with col5:
                     st.image("Finance.png")
-                with col8:
+                with col6:
                     st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiOWMxYWQ1OTAtYmZmYy00Y2E5LTlmYmUtOTI2YjA3MGU4MTlhIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")  
                     st.markdown("""
                     - The dashboard is a Personal Finance Dashboard summarizing key financial metrics such as income, expenses, and available balance. It tracks performance against target income, with visualizations for income trends and a gauge to highlight target shortfalls.
@@ -191,28 +192,21 @@ def web_portfolio():
 
                 # Project 2: Sales Dashboard
                 st.write("### 🚀 Optimizing Sales Dashboard with Power BI! 📊:")
-                col13, col14, col15, col16, col17 = st.columns((1, 1, 1, 1,1))  # Add more columns for additional images
-                with col13:
-                    st.image("Screenshot (237).png")  # First image
-                with col14:
-                    st.image("Screenshot (238).png")  # Second image
-                with col15:
-                    st.image("Screenshot (239).png")  # Third image
-                with col16:
-                    st.image("Screenshot (240).png")  
-                with col17:
-                    st.image("Screenshot (241).png")
-                st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiYWYwOGExMTYtZmJiOC00Zjg0LThlYjItOTIxMjljNzhiMTdiIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
-                st.markdown("""
-                - In this project highlights significant sales and return trends from 2010 to 2013. Over this period, you achieved a total of 61K transactions, resulting in a net sale of $73M and a profit margin of $48M, with 214K units sold across 349 products to 701 customers. The transaction volume increased consistently each year, with notable customer engagement categorized into Diamond, Silver, and Gold ratings. On the return side, 14K units were refunded, amounting to a $6M total refund, representing an 8% return rate. Key customers with the highest return rates include Monster Well and BodyBuild Depart, reflecting areas for improvement in product satisfaction.
-                """)
+                col7, col8 =   st.columns((1, 2)) # Add more columns for additional images
+                with col7:
+                    st.video("HPN_Dashboard.mp4")  # First image
+                with col8:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiYWYwOGExMTYtZmJiOC00Zjg0LThlYjItOTIxMjljNzhiMTdiIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - In this project highlights significant sales and return trends from 2010 to 2013. Over this period, you achieved a total of 61K transactions, resulting in a net sale of $73M and a profit margin of $ 48M, with 214K units sold across 349 products to 701 customers. The transaction volume increased consistently each year, with notable customer engagement categorized into Diamond, Silver, and Gold ratings. On the return side, 14K units were refunded, amounting to a $6M total refund, representing an 8% return rate. Key customers with the highest return rates include Monster Well and BodyBuild Depart, reflecting areas for improvement in product satisfaction.
+                    """)
 
             # Project 3: Income Statement Dashboard
                 st.write("### 🚀 Optimizing Income Statement Dashboard with Power BI! 📊:")
-                col18, col19 = st.columns((1, 2))
-                with col18:
+                col9, col10 = st.columns((1, 2))
+                with col9:
                     st.image("Screenshot (242).png")
-                with col19:
+                with col10:
                     st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNjBiMzViYmEtNDEzYi00MjVkLWJmYzAtMzA0M2I0Y2ZlYTM3IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
                     st.markdown("""
                         -  The dashboard provides an income statement analysis for the selected year, comparing current and previous periods across key financial metrics such as revenue, gross profit, net income, and expenses. It highlights percentage changes for each metric and includes visual representations, such as line charts and a donut chart for the net income margin (11.45%). The dashboard is segmented by months and regions, allowing for further filtering and exploration of financial performance over time. Key figures show minor growth in revenue (1%) but a significant drop in net income (34%).
@@ -221,10 +215,10 @@ def web_portfolio():
 
             # Project 4: Patient Emergency Room Visit Report 
                 st.write("### 🚀 Optimizing Patient Emergency Room Visit Report with Power BI! 📊")
-                col51,col52 = st.columns((1,2))
-                with col51:
+                col11,col12 = st.columns((1,2))
+                with col11:
                     st.image("Patient.png")
-                with col52:
+                with col12:
                     st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNDc4MzMzOTItZjBmMC00MmNkLWJhNTAtZjY1MmMyMTQ4MTRlIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
                     st.markdown("""
                     - The Patient Emergency Room Visit Report provides an overview of 9,216 total visits, evenly split between administrative and non-administrative appointments. The average patient satisfaction score is 5.47, with 75.10% of services not rated and an average wait time of 35.26 minutes. Most visits occurred during weekdays, with adult patients making up the majority. Referrals primarily lead to general practitioners and orthopedics, while walk-in patients account for 58.59% of the total visits. Patient satisfaction correlates with shorter wait times, as highlighted in the demographic and age group heatmap analysis.
@@ -233,14 +227,14 @@ def web_portfolio():
 
             # Project 5: Risk EQUIPMENT DASHBOARD
                 st.write("### 🚀 Optimizing Risk Equipment Dashboard with Power BI! 📊:")
-                col53, col54, col55, col56 = st.columns((1, 1, 1, 1))  # Add more columns for additional images
-                with col53:
+                col13, col14, col15, col16 = st.columns((1, 1, 1, 1))  # Add more columns for additional images
+                with col13:
                     st.image("Risk1.png")  # First image
-                with col54:
+                with col14:
                     st.image("Risk2.png")  # Second image
-                with col55:
+                with col15:
                     st.image("Risk3.png")  # Third image
-                with col56:
+                with col16:
                     st.image("Risk4.png")  
                 st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNGMyZTlhMTMtNDE5Ny00ZjQ5LWFlM2UtYTEyZmU5OTY4N2QyIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
                 st.markdown("""
@@ -254,13 +248,154 @@ def web_portfolio():
 
             # Project 6: Fleet Management Dashboard
                 st.write("### 🚀 Optimizing Fleet Management Dashboard with Power BI! 📊:")
-                col57,col58 = st.columns((1,2))
-                with col57:
+                col17,col18 = st.columns((1,2))
+                with col17:
                     st.image("FLEETMANAGEMENT.png")
-                with col58:
+                with col18:
                     st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNmQwZWUyMGItNDdhNi00NjA3LWE0NWQtYjI0YjhmZTYyMjk5IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
                     st.markdown("""
                     - Fleet Management Dashboard: Designed and developed a dynamic Power BI dashboard to monitor fleet operations and key performance indicators. The dashboard provides insights into metrics such as total fuel consumed, maintenance costs, kilometers traveled, and driver performance. Leveraged data modeling and DAX measures to create intuitive visuals, including trend analysis and comparative metrics, enabling stakeholders to make data-driven decisions. The dashboard integrates multiple data sources and ensures seamless data refresh for up-to-date analysis.
+                    """)
+
+
+                st.write("### 🚀 Call Center Dashboard with Power BI! 📊:")
+                col17,col18 = st.columns((1,2))
+                with col17:
+                    st.video("Call_Center_Dashboard.mp4")
+                with col18:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiMjQ5YTNmMTQtMjQyMy00MTZmLWFiOTctOTc3NTA1M2RhZmQ5IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Developed an interactive Power BI dashboard to monitor call center performance. Visualized key metrics such as call volume, average handling time, and customer satisfaction. Provided actionable insights to enhance operational efficiency and optimize resource allocation. Enabled real-time decision-making through intuitive visualizations.
+                    """)
+
+                st.write("### 🚀 Expense Analysis Dashboard with Power BI! 📊:")
+                col19,col20 = st.columns((1,2))
+                with col19:
+                    st.video("Expense_Analysis_Dashboard.mp4")
+                with col20:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNTgyMzA0ZWYtNzU5OS00NWQ0LWJlNzktNzNmNDdhYzVlN2RkIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Designed a comprehensive Power BI dashboard to track and analyze expenses across categories. Visualized spending patterns, identified cost-saving opportunities, and provided detailed financial insights. Enabled stakeholders to make data-driven budgeting decisions through clear and interactive visualizations.
+                    """)
+
+                st.write("### 🚀 Energy Consumption Dashboard with Power BI! 📊:")
+                col20,col21 = st.columns((1,2))
+                with col20:
+                    st.video("Energy_Consumption_Dashboard.mp4")
+                with col21:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiODA4Zjk5ZDMtMGRjOS00ZTQ0LTgzMTgtNTlkYTIzODdkMWYxIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Developed an interactive Power BI dashboard to monitor energy consumption patterns across various sectors. Provided actionable insights through detailed visualizations, facilitating energy optimization and cost management. Empowered decision-makers to reduce wastage and enhance energy efficiency.
+                    """)
+
+                st.write("### 🚀 Ecommerce Sales Dashboard with Power BI! 📊:")
+                col22,col23 = st.columns((1,2))
+                with col22:
+                    st.video("Ecommerce_Sales_Dashboard.mp4")
+                with col23:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiMjhlNzA1ZDMtMzhhZi00ZTcxLTlkZWItZGU5MzVlYjE0ZGMwIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Designed an intuitive Power BI dashboard to analyze ecommerce sales performance. Visualized key metrics such as revenue, sales trends, and product performance. Delivered actionable insights to optimize sales strategies and drive business growth.
+                    """)
+
+                st.write("### 🚀 Sales Performance Dashboard with Power BI! 📊:")
+                col24,col25 = st.columns((1,2))
+                with col24:
+                    st.video("Sales_Performance_Dashboard.mp4")
+                with col25:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiZjYwNDUwYWQtZTcxMS00Y2IxLWIzMDUtNjAwNmZlMGE3ZTdmIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Developed a dynamic sales performance dashboard in Power BI. Provided real-time insights into sales trends, regional performance, and product analysis. Enabled stakeholders to make data-driven decisions for improved sales outcomes.
+                    """)
+                    
+                st.write("### 🚀 Employee Performance Dashboard with Power BI! 📊:")
+                col26,col27 = st.columns((1,2))
+                with col26:
+                    st.video("Employee_Performance_Dashboard.mp4")
+                with col27:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNjMzZjcxZDQtODEzNS00OWFlLThiMjQtZGE1NjFiOGUzYTc2IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Developed a Power BI dashboard to assess employee performance using key metrics like productivity, attendance, and task completion. Provided actionable insights for HR and management to identify top performers and support employee development.
+                    """)
+
+                st.write("### 🚀 Sales Win Loss Ratio Dashboard with Power BI! 📊:")
+                col28,col29 = st.columns((1,2))
+                with col28:
+                    st.video("Salaes_Win_Loss_Ratio_Dashboard.mp4")
+                with col29:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNDZkODcxOTEtMTk4MS00MzUzLTk5OTUtY2NmMjdkNTU5Njc5IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Built a dynamic Power BI dashboard to track sales performance by analyzing win-loss ratios. Provided detailed insights into deal outcomes, helping sales teams refine strategies and improve conversion rates.
+                    """)
+
+                st.write("### 🚀 Sales and Inventory Dashboard with Power BI! 📊:")
+                col30,col31 = st.columns((1,2))
+                with col30:
+                    st.video("Sales_And_Inventory_Dashboard.mp4")
+                with col31:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiMTRiNzkxNjUtMWYzYi00NGU2LThhOTctYzkwYTFmOWE2MTA0IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Developed a Power BI dashboard to monitor real-time sales and inventory levels. Provided actionable insights for inventory management, reducing stockouts and overstocking, and improving operational efficiency.
+                    """)
+
+                st.write("### 🚀 Supply Chain Dashboard with Power BI! 📊:")
+                col32,col33 = st.columns((1,2))
+                with col32:
+                    st.video("Supply_Chain_Analytics.mp4")
+                with col33:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiM2MxZjlkNTAtZmZmZi00NzM3LWJiNmYtNmNmNzQ2MzNiZTMyIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Designed a comprehensive Power BI dashboard to analyze supply chain performance, monitor key metrics, and identify bottlenecks. Enabled data-driven decision-making, improving overall operational efficiency and reducing costs.
+                    """)
+
+                st.write("### 🚀 Customer Analytics Dashboard with Power BI! 📊:")
+                col32,col33 = st.columns((1,2))
+                with col32:
+                    st.video("Customer_Analytics_Dashboard.mp4")
+                with col33:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiMmM5ZDliMmYtNzFlZS00MmVjLWEzNWYtNjdiNGM1M2Q2ZjI0IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Developed a dynamic Power BI dashboard to analyze customer behavior, segment audiences, and track key performance indicators. Provided actionable insights to enhance customer retention and personalize marketing strategies.
+                    """)
+
+                st.write("### 🚀 Balance Sheet Dashboard with Power BI! 📊:")
+                col34,col35 = st.columns((1,2))
+                with col34:
+                    st.video("Balance_Statment_Analytics.mp4")
+                with col35:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNzg5YTQ2OTYtMDIxNC00YTBiLTk1ZjYtODRkZjQ4ZTVlOGVkIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Designed an interactive Power BI dashboard to visualize financial data, track revenue, expenses, and profit trends. Enabled stakeholders to make informed financial decisions with real-time insights and comprehensive reports.
+                    """)
+                
+                st.write("### 🚀 Car Sale Dashboard with Power BI! 📊:")
+                col34,col35 = st.columns((1,2))
+                with col34:
+                    st.video("Car_Sales_Dashboard.mp4")
+                with col35:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiYmUzMDk3YjMtNzg2Zi00NDA5LTg0MDgtYjE2ZTk4ZTZjOGM5IiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Developed a comprehensive Power BI dashboard to monitor car sales performance, analyze trends, and assess dealership profitability. Provided actionable insights using visualized KPIs, regional comparisons, and sales growth metrics.
+                    """)
+
+                st.write("### 🚀 Adidas Sales Dashboard with Power BI! 📊:")
+                col34,col35 = st.columns((1,2))
+                with col34:
+                    st.video("ADDIDAS_SALES_VIDEO.mp4")
+                with col35:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiNDA4ZDhjMGQtY2MxOS00MjUzLTlhY2ItM2IyYjhiZWJlMTNmIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Created an interactive Power BI dashboard to analyze Adidas sales data, track revenue growth, and evaluate regional performance. Delivered data-driven insights into product sales, customer preferences, and market trends.
+                    """)
+                
+                st.write("### 🚀 Toman Bike Shop Dashboard with Power BI! 📊:")
+                col34,col35 = st.columns((1,2))
+                with col34:
+                    st.video("Toman_Bike_Shop.mp4")
+                with col35:
+                    st.markdown("[Visit Project](https://app.powerbi.com/view?r=eyJrIjoiOGNhZjBjZjYtYjQzOC00ZWJlLThlZDQtMjgyMjM0NTgxZjJjIiwidCI6IjI0MWNlN2VlLTVjYmUtNDczNi1hYWM0LWZkOWZmM2NjMWRkMSIsImMiOjl9)")
+                    st.markdown("""
+                    - Developed a comprehensive Power BI dashboard for Toman Bike Shop, analyzing sales performance, inventory levels, and customer preferences. Provided actionable insights to optimize product offerings and enhance operational efficiency.
                     """)
 
         # Data Science Projects Section
@@ -465,3 +600,4 @@ def web_portfolio():
 
 if __name__ == "__main__":
     web_portfolio()
+
