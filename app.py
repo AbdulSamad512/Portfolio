@@ -153,7 +153,7 @@ def web_portfolio():
         with st.container():
             st.header("My Projects")
         # Add subcategories for Dashboards and Data Science Projects
-            subcategory = st.radio("Select Project Category:", ["Dashboards", "Data Science Projects", "Data base & ETL Projects"], horizontal=True)
+            subcategory = st.radio("Select Project Category:", ["Dashboards", "Data Science Projects", "Data base & ETL Projects","MLOPS PROJECT"], horizontal=True)
 
         # Dashboards Section
             if subcategory == "Dashboards":
@@ -412,16 +412,6 @@ def web_portfolio():
                         - This project involves building a deep learning model for time-series forecasting using a sequential Long Short-Term Memory (LSTM) network. The model architecture consists of four LSTM layers with increasing units (50, 60, 80, 120) to capture complex temporal dependencies in the data. Dropout layers with rates ranging from 0.2 to 0.5 are incorporated to prevent overfitting. The network is finalized with a Dense layer to output predictions. Designed for input shapes matching the time-series data, the model is trained on preprocessed datasets, leveraging robust recurrent layers. Applications include stock price prediction, weather forecasting, or similar time-series tasks. This architecture is tailored to enhance predictive accuracy while mitigating overfitting risks.
                     """)
 
-                st.write("## Airline Customer Satisfaction MLOPS Projects")
-                col33,col34 = st.columns((1,2))
-                with col33:
-                    st.video("AirlineMLOPS.mp4")
-                with col34:
-                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Airline_Customer_Satisfaction)")
-                    st.markdown("""
-                        - This project involves building a machine learning model to analyze airline customer   satisfaction, utilizing MLOps technologies to streamline and manage the project workflow efficiently.
-                    """)
-
                 # Project 5: HR Employee Attrition
                 st.write("## Employee Churn Predicition:")
                 col24,col25 = st.columns((1,2))
@@ -569,6 +559,50 @@ def web_portfolio():
                         ✅ Created clear documentation & architecture diagrams to guide stakeholders  
                     """)
 
+                st.write("### Multi-Location Weather ETL Pipeline")
+                col89,col90,col91 = st.columns((1,1,2))
+                with col89:
+                    st.image("Apache_Airflow1.png")
+                with col90:
+                    st.image("Apache_Airfloe2.png")
+                with col91:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/Multi-Location-Weather-ETL-Pipeline#)")
+                    st.markdown("""
+                    - Developed an automated ETL pipeline using Apache Airflow to extract, transform, and load weather data from multiple geographic locations into a PostgreSQL database. The pipeline collects real-time weather data via APIs, processes and cleans it using Python (Pandas, NumPy), and loads it into a structured database for analysis. Scheduled daily DAG runs ensure timely updates, while logging and error-handling mechanisms help track failures and automate retries. The system improves data reliability and accessibility, supporting advanced analytics and reporting. Technologies used include Apache Airflow, PostgreSQL, Python, and SQL.
+                    """)
+
+
+            elif subcategory == "MLOPS PROJECT":
+                st.write("## MLOPS PROJECT")
+
+                st.write("## MLOps-based Airline Customer Analytics System")
+                col33,col34 = st.columns((1,2))
+                with col33:
+                    st.video("AirlineMLOPS.mp4")
+                with col34:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/MLOPS-PROJECT-AIRLINE)")
+                    st.markdown("""
+                        - This project is an MLOps-based Airline Customer Analytics System that streamlines data processing, model training, and deployment. It integrates data versioning (DVC) and CI/CD pipelines (Jenkins) to ensure robust model lifecycle management. The pipeline includes data ingestion, preprocessing, feature engineering, and model deployment using Docker for containerization. Custom exception handling, as shown in the image, enhances debugging by capturing and formatting detailed error messages. Logging and monitoring are incorporated using MLflow, enabling real-time tracking of model performance. The project ensures scalability and reproducibility, making it suitable for airline customer behavior analysis and predictive modeling. 🚀
+                    """)
+
+                st.write("## Vehicle Insurance Risk Prediction using MLOps")
+                col33,col34 = st.columns((1,2))
+                with col33:
+                    st.image("MlopsVehicle.png")
+                with col34:
+                    st.markdown("[Visit Github Repo](https://github.com/AbdulSamad512/VEHICLE-INSURANCE-MLOPS-PROJECT1)")
+                    st.markdown("""
+                        - This project aims to automate the end-to-end machine learning lifecycle for vehicle insurance risk prediction using MLOps practices. The system leverages Python, Scikit-learn, and TensorFlow/PyTorch for building predictive models, along with Docker, Git, and CI/CD pipelines for deployment. The architecture follows a modular structure with components for data ingestion, validation, transformation, model training, evaluation, and deployment. The project utilizes FastAPI or Flask for serving the model, integrates Power BI for visualization, and employs Cloud platforms (AWS/Azure/GCP) for scalable deployment.
+                                
+                        💡 Key Tools & Technologies:
+                        ✅ Machine Learning: Python, Pandas, NumPy, Scikit-learn, TensorFlow/PyTorch
+                        ✅ MLOps: Docker, GitHub Actions, DVC, MLflow
+                        ✅ Backend & Deployment: FastAPI/Flask, Kubernetes, Cloud Services
+                        ✅ Data Processing: SQL, Power BI, Azure Data Factory
+                        ✅ Automation: CI/CD Pipelines, Power Automate
+                    """)
+
+
             else:
                 st.write("Please select a valid project category.")     
            
@@ -600,4 +634,3 @@ def web_portfolio():
 
 if __name__ == "__main__":
     web_portfolio()
-
