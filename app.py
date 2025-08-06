@@ -46,7 +46,7 @@ def web_portfolio():
             cert_imgs.append("data:image/jpg;base64," + b64encode(cert_file.read()).decode())
 
     # Reading Profile
-    with open("UpdatedDaSc.pdf", "rb") as pdf_file:
+    with open("AbdulSamad(Dev)", "rb") as pdf_file:
        pdf_bytes = pdf_file.read()
 
     # Add animation on the DP
@@ -113,15 +113,12 @@ def web_portfolio():
             with col1:
                 st.write("##")
                 st.subheader("I am Abdul Samad")
-                st.title("Undergraduate at BSAI 8th Semester")
+                st.title("Bachelor of Science in Artificial Intelligence [2021-june2025]")
                 st.markdown("""
-                - 🧑‍💻 I am a **Mid Level Data Analyst and BI-Consultant** at [Diamond Supermarket HO], 
-                where I am currently working on a Data Science& Machine Learning project for Keep Learning.
-                - ❤️ I am passionate about *Machine Learning/Deep Learning, MLOps, Data Science, Software Engineering, 
-                Computer Vision, Data Analytics, Data Engineering, Automation*, and more!
-                - 🏂 In my free time, I enjoy practicing sports such as Cricket and Cycling.
-                - 🪧 You can reach me at tech365developer@gmail.com.
-                - 🏠 Based in Pakistan.
+                - 🧑‍💻 I’m a Mid-Level ERP & Data Analyst and BI Consultant, currently working at PwC as an Oracle Developer & BI Developer. I’m actively contributing to projects that integrate Oracle Development, Data Science, and Machine Learning—focused on delivering intelligent solutions and continuous learning.
+                - ❤️ I’m deeply passionate about Machine Learning, Deep Learning, MLOps, Data Science, Data Engineering, Computer Vision, Automation, and Software Engineering. I enjoy turning complex data into actionable insights and building scalable systems that make an impact.
+                - 📫 Feel free to reach out at tech365developer@gmail.com
+                - 🏠 Based in Pakistan
                 """)
             with col2:
                 st_lottie(lottie_coder)
@@ -634,3 +631,4 @@ def web_portfolio():
 
 if __name__ == "__main__":
     web_portfolio()
+
